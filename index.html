@@ -5,7 +5,13 @@
   </head>
   <body>
     <h1>Proxy test</h1>
-    <div id="detailsMain" style="width: 40%;"></div>
-    <script src="http://127.0.0.1:3002/1/bundle.js"></script>
+    <div style="display: flex; width: 100%; justify-content: flex-end;">
+      <div style="position: fixed; margin: 0; left: 0">
+        <div id="carousel"></div>
+        <script src="http://localhost:3001/1/webpack.bundle.js"></script>
+      </div>
+      <div id="detailsMain" style="width: 40%; margin: 0; z-index: 2;"></div>
+      <script src="http://127.0.0.1:3002/1/bundle.js"></script>
+    </div>
   </body>
 </html>
